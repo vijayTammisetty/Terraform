@@ -1,9 +1,10 @@
 terraform {
   backend "s3" {
-    bucket = "om-123"
+    bucket = "vijay-s3-01"
     key = "terraform.tfstate"
-    dynamodb_table = "terraform-state-lock-dynamo"
     region = "us-east-1"
+    dynamodb_table = "terraform-state-lock-dynamo"
     encrypt = true
+    
   }
 }
